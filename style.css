@@ -1,0 +1,176 @@
+html, body {
+    margin: 0;
+    font-family: 'Lucida Grande', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.CodeMirror {
+    border: 1px solid #ddd;
+    height: auto;
+    width: -webkit-calc(50% - 15px);
+    width: calc(50% - 15px);
+    font-family: 'Droid Sans Mono', sans-serif;
+    font-size: 16px;
+    margin: 5px;
+    line-height: 1.2;
+}
+
+.CodeMirror-scroll {
+    overflow-y: hidden;
+    overflow-x: auto;
+    min-height: 300px;
+}
+
+.output-wrapper {
+    overflow: hidden;
+}
+
+html.hide-output .output-wrapper {
+    display: none;
+}
+
+html.hide-output .CodeMirror {
+    width: -webkit-calc(100% - 20px);
+    width: calc(100% - 20px);
+}
+
+h1 {
+    margin: 5px;
+}
+
+.error {
+    color: red;
+}
+
+.error, .source-map {
+    margin: 10px;
+    flex: 1;
+}
+
+.options-area {
+    position: relative;
+    height: 25px;
+}
+
+.repl-button {
+    background: black;
+    border-radius: 5px;
+    border: 0;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, .5);
+    color: white;
+    display: inline-block;
+    font: 13px/20px 'Droid Sans', sans-serif;
+    margin: 0;
+    padding: 4px 10px;
+    position: relative;
+    text-decoration: none;
+}
+
+.menu-container {
+    position: relative;
+}
+
+.options {
+    background: black;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
+    color: white;
+    font: 13px/20px 'Droid Sans', sans-serif;
+    margin-top: -5px;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    width: 32ex;
+    z-index: 10;
+}
+
+.options label {
+    display: block;
+}
+
+.options label > input {
+    vertical-align: -2px;
+    margin: 0 1ex 0 0;
+}
+
+.options hr {
+    background: white;
+    border: 0;
+    height: 1px;
+}
+
+.god0 {
+    color: red;
+    -webkit-transition: color 1s ease-in-out;
+    transition: color 1s ease-in-out;
+}
+
+.god1 {
+    color: yellow;
+    -webkit-transition: color 1s ease-in-out;
+    transition: color 1s ease-in-out
+}
+
+.vbox {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.hbox {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.stretch {
+    flex: 2;
+}
+
+.hbox.center {
+    align-items: center;
+}
+
+.sourceMapRange {
+    background-color: rgba(192, 192, 192, 0.43);
+}
+
+
+
+.cm-s-default .cm-keyword {color: #708;}
+.cm-s-default .cm-atom {color: #219;}
+.cm-s-default .cm-number {color: #164;}
+.cm-s-default .cm-def {color: #00f;}
+.cm-s-default .cm-variable,
+.cm-s-default .cm-punctuation,
+.cm-s-default .cm-property,
+.cm-s-default .cm-operator {}
+.cm-s-default .cm-variable-2 {color: #05a;}
+.cm-s-default .cm-variable-3 {color: #085;}
+.cm-s-default .cm-comment {color: #a50;}
+.cm-s-default .cm-string {color: #a11;}
+.cm-s-default .cm-string-2 {color: #f50;}
+.cm-s-default .cm-meta {color: #555;}
+.cm-s-default .cm-qualifier {color: #555;}
+.cm-s-default .cm-builtin {color: #30a;}
+.cm-s-default .cm-bracket {color: #997;}
+.cm-s-default .cm-tag {color: #170;}
+.cm-s-default .cm-attribute {color: #00c;}
+.cm-s-default .cm-header {color: blue;}
+.cm-s-default .cm-quote {color: #090;}
+.cm-s-default .cm-hr {color: #999;}
+.cm-s-default .cm-link {color: #00c;}
+
+.cm-negative {color: #d44;}
+.cm-positive {color: #292;}
+.cm-header, .cm-strong {font-weight: bold;}
+.cm-em {font-style: italic;}
+.cm-link {text-decoration: underline;}
+
+.cm-s-default .cm-error {color: #f00;}
+.cm-invalidchar {color: #f00;}
