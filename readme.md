@@ -4,6 +4,12 @@ This is viewer app - compile [altJS](https://github.com/jashkenas/coffee-script/
 
 <a href="http://monosnap.com/file/0bpjjjA83AkUgVjEX3GdXIfWqtxrTN"><img src="http://monosnap.com/image/QGoNdwdBt1cqAbAgJ57ThkAbKnz03Z.png"></a>
 
+## Current Support altJS
+
+* [CoffeeScript](https://github.com/michaelficarra/CoffeeScriptRedux "CoffeeScript")
+* TypeScript
+* ES6
+
 ## Installation
 
 1. [Downloads](https://github.com/rogerwang/node-webkit#downloads "Downloads") node-webkit
