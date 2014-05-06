@@ -21,10 +21,6 @@ This is viewer app - compile [altJS](https://github.com/jashkenas/coffee-script/
 
 Input AltJS code to left editor.
 
-## Known Bug
-
-* Didn't syntax highlight...
-
 ## Contributing
 
 1. Fork it!
