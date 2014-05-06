@@ -1,4 +1,5 @@
 var CodeMirror = require("codemirror");
+require('codemirror/mode/javascript/javascript');
 var compiler = require("./altjs/compilers");
 var inputTextArea = document.querySelector(".input");
 var outputTextArea = document.querySelector(".output");
