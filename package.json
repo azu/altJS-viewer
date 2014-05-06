@@ -1,0 +1,35 @@
+{
+  "name": "altJS-viewer",
+  "description": "altJS Viewer.app in node-webkit",
+  "keywords": ["node-webkit","altJS","JavaScript", "transpiler"],
+  "version": "0.0.1",
+  "homepage": "https://github.com/azu/altJS-viewer/",
+  "repository": {
+    "url": "git://github.com/azu/altJS-viewer.git"
+  },
+  "main": "index.html",
+  "scripts": {
+    "test": "mocha test/*.js"
+  },
+  "directories": {
+    "test": "test/"
+  },
+  "author": "azu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/azu/altJS-viewer/issues"
+  },
+  "dependencies": {
+    "bluebird": "^1.2.4",
+    "codemirror": "^4.1.0",
+    "coffee-script-redux": "^2.0.0-beta8",
+    "es6-transpiler": "^0.7.13-5",
+    "typestring": "^1.0.0-2"
+  },
+  "devDependencies": {
+    "intelli-espower-loader": "0.0.7",
+    "mocha": "^1.18.2",
+    "power-assert": "^0.6.1",
+    "promise-test-helper": "0.0.4"
+  }
+}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>AltJS Viewer</title>
+    <link rel="stylesheet" href="node_modules/codemirror/lib/codemirror.css">
+
+    <style>
+
+        html, body {
+            margin: 0;
+            font-family: 'Lucida Grande', sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .CodeMirror {
+            border: 1px solid #ddd;
+            height: auto;
+            width: -webkit-calc(50% - 15px);
+            width: calc(50% - 15px);
+            font-family: 'Droid Sans Mono', sans-serif;
+            font-size: 12px;
+            margin: 5px;
+            line-height: 1.2;
+        }
+
+        .CodeMirror-scroll {
+            overflow-y: hidden;
+            overflow-x: auto;
+            min-height: 300px;
+        }
+
+        .output-wrapper {
+            overflow: hidden;
+        }
+
+        html.hide-output .output-wrapper {
+            display: none;
+        }
+
+        html.hide-output .CodeMirror {
+            width: -webkit-calc(100% - 20px);
+            width: calc(100% - 20px);
+        }
+
+        h1 {
+            margin: 5px;
+        }
+
+        .error {
+            color: red;
+        }
+
+        .error, .source-map {
+            margin: 10px;
+            flex: 1;
+        }
+
+        .options-area {
+            position: relative;
+            height: 25px;
+        }
+
+        .repl-button {
+            background: black;
+            border-radius: 5px;
+            border: 0;
+            box-shadow: 1px 1px 4px rgba(0, 0, 0, .5);
+            color: white;
+            display: inline-block;
+            font: 13px/20px 'Droid Sans', sans-serif;
+            margin: 0;
+            padding: 4px 10px;
+            position: relative;
+            text-decoration: none;
+        }
+
+        .menu-container {
+            position: relative;
+        }
+
+        .options {
+            background: black;
+            border-radius: 5px;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
+            color: white;
+            font: 13px/20px 'Droid Sans', sans-serif;
+            margin-top: -5px;
+            padding: 10px;
+            position: absolute;
+            right: 0;
+            width: 32ex;
+            z-index: 10;
+        }
+
+        .options label {
+            display: block;
+        }
+
+        .options label > input {
+            vertical-align: -2px;
+            margin: 0 1ex 0 0;
+        }
+
+        .options hr {
+            background: white;
+            border: 0;
+            height: 1px;
+        }
+
+        .god0 {
+            color: red;
+            -webkit-transition: color 1s ease-in-out;
+            transition: color 1s ease-in-out;
+        }
+
+        .god1 {
+            color: yellow;
+            -webkit-transition: color 1s ease-in-out;
+            transition: color 1s ease-in-out
+        }
+
+        .vbox {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        .hbox {
+            display: flex;
+            flex-direction: row;
+            flex: 1;
+            justify-content: space-around;
+            width: 100%;
+        }
+
+        .stretch {
+            flex: 2;
+        }
+
+        .hbox.center {
+            align-items: center;
+        }
+
+        .sourceMapRange {
+            background-color: rgba(192, 192, 192, 0.43);
+        }
+
+    </style>
+</head>
+<body>
+
+<div class='hbox'>
+    <textarea class="input"></textarea>
+    <textarea class="output"></textarea>
+</div>
+<script src="app/node-webkit/workarount.js"></script>
+<script>
+    require("./app/index.js");
+</script>
+</body>
+</html>
